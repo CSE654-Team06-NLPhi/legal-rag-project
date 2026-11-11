@@ -1,0 +1,45 @@
+CSE654
+
+# KVKK Baseline vs RAG
+
+## Team 06
+NLPhi 
+
+## Dataset
+Questions(in).csv
+
+## Knowledge Source
+KVKK.pdf
+
+## LLM
+Qwen/Qwen2.5-1.5B-Instruct
+
+## Embedding Model
+BAAI/bge-m3
+
+## Vector Database
+ChromaDB
+
+## Retrieval Settings
+
+Top-K = 2
+
+Chunk Size = 512
+
+Chunk Overlap = 64
+
+## Generation Settings
+
+max_new_tokens = 128
+
+do_sample = False
+
+repetition_penalty = 1.1
+
+## Evaluation
+
+The same question set was used for both baseline and RAG systems.
+
+The same prompt and language model were used.
+
+The only difference between the two systems is the retrieved context from KVKK.pdf.
